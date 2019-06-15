@@ -1,0 +1,38 @@
+html{
+    background-color: white;
+    color: black;
+}
+a {
+ animation: spintext 5s infinite;
+}
+a:visited{
+    color: purple;
+}
+
+a:focus{
+  color: brown;
+}
+.active{
+  color:red;
+}
+
+main p{
+  background: blue;
+}
+nav{
+  color: green;
+  font-size:25px;
+}
+a:hover {
+   transform: rotate(1080deg) scale(1.5);
+   transition: 2s;
+}
+@media (max-width: 1000px) {
+   nav {
+      font-size: 20px;
+}
+@keyframes spintext {
+   0% { transform: scale(1.0); }
+   50% { transform: scale(5.0) rotate(10000deg); transition: 5s; }
+   100% { transform: scale(1.0); transition: 5s; }
+}
